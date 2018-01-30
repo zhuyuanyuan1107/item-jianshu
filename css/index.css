@@ -1,0 +1,242 @@
+header {
+	width: 100%;
+	height: 54px;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 56px;
+}
+header .logo{
+	height: 55px;
+	float: left;
+}
+header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+header .nav {
+	float: left;
+	width: 342px;
+}
+header .nav > li {
+	float: left;
+	left: 88px;
+	margin-left: 10px;
+}
+
+header .nav .tab>a {
+	font-size: 17px;
+	color: #333;
+	padding: 0 18px;
+}
+header .nav > li {
+	height: 53px;
+}
+header .nav .tab:hover {
+	background-color: #eee;
+}
+
+header .nav .active a {
+	color: #e86f5e;
+}
+header .nav .tab {
+	position: relative;
+}
+header .nav > li:hover .message-down{
+	display: block;
+}
+header .nav .tab-message > ul  {
+	position: absolute;
+	left: 1px;
+    top: 54px;
+    box-shadow: 0 3px 4px 3px rgba(0,0,0,0.1);
+    display: none;
+    padding-top:10px;
+}
+header .nav .tab > ul span {
+	color: #e86f5e;
+	padding: 0 14px;
+}
+header .nav .tab > ul a {
+	display: block;
+	width: 160px;
+	height: 50px;
+	font-size: 15px;
+	color: #333;
+	padding-left: 10px;
+}
+header .nav .tab > ul a:hover {
+	background-color: #eee;
+}
+
+/* search   ****************************************************/
+header .search {
+	float: left;
+	position: relative;
+	width: 284px;
+}
+
+header .search input {
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+	width: 150px;
+	height: 38px;
+	line-height: 38px;
+	color: #a0a0a0;
+	background-color: #eee;
+	border: none;
+	border-radius: 19px;
+	outline: none;
+	transition: all .5s;
+}
+header .search .icon-search {
+	float: left;
+    margin-top: 13px;
+    margin-left: -35px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+}
+header .search input:focus {
+	width: 240px;
+}
+
+header .search input:focus~.icon-search{
+	background-color: #969696;
+	color: #fbfbfb;
+}
+header .search .search-down {
+	float: left;
+	position: relative;
+	width: 240px;
+	height: 200px;
+    box-shadow:  0 1px 4px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+	border: none;
+	display: none;
+}
+
+header .search input:focus~.search-down{
+    display:block;
+}
+header .search .search-down:before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 100px;
+    left: 24px;
+    top: -105px;
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    box-shadow: -1px -1px 1px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+header .search .search-down h3 {
+	padding-left: 20px;
+    font-size: 13px;
+    color: #ccc;
+}
+header .search .search-down .change {
+    position: absolute;
+    height: 44px;
+    width: 69px;
+    top: -2px;
+    right: 7px;
+    font-size: 13px;
+    color: #ccc;
+}
+header .search .search-down .change:hover{
+	color: #333;
+}
+
+header .search .search-down .lable a{
+	float: left;
+	margin: 10px 0 0 20px;
+	padding: 2px;
+	line-height: 15px;
+	border: 1px solid #aaa;
+	color: #aaa;
+	border-radius: 3px;
+}
+
+header .search .search-down .lable a:hover {
+	border: 1px solid #333;
+	color: #333;
+}
+/*extra **********************************************************/
+header .extra {
+	position: relative;
+	float: right;
+	width: 300px;
+	height: 54px;
+}
+
+header .extra .user {
+	position: absolute;
+	top: 1px;
+	right: 40px;
+	width: 100px;
+	height: 54px;
+
+}
+header .extra >.user .select img {
+	position: absolute;
+    top: 4px;
+    right: 125px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+}
+header .extra > .user .icon-down {
+	float: left;
+	position: absolute;
+	padding-left: 30px;
+	top: 1px;
+	right: 93px;
+}
+
+header .extra > .user  ul {
+	float: right;
+	position: absolute;
+	padding-top: 10px;
+    width: 124px;
+    right: 59px;
+    top: 54px;
+	box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.1);
+	display: none;
+}
+
+header .extra .user:hover  ul {
+	display: block;
+}
+header .extra  .user ul span{
+	color: #e86f5e;
+	padding: 0 10px 0 10px;
+}
+
+header .extra  .user ul .tab:hover{
+	background-color: #eee;
+}
+header .extra .write .icon-write {
+    position: absolute;
+    right: 76px;
+}
+header .extra .write {
+	float: right;
+    box-sizing: border-box;
+    top: 8px;
+    position: absolute;
+    padding: 13px 0 13px 21px;
+    right: 7px;
+    width: 115px;
+    font-size: 16px;
+    line-height: 15px;
+    border-radius: 20px;
+    background-color: #e86f5e;
+    color: white;
+    text-align: center;
+}
