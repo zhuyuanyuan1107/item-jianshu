@@ -7,12 +7,13 @@ header {
 header .logo{
 	height: 55px;
 	float: left;
-}
+}s
 header:after {
 	content: '';
 	display: block;
 	clear: both;
 }
+
 header .nav {
 	float: left;
 	width: 342px;
@@ -74,7 +75,8 @@ header .nav .tab > ul a:hover {
 header .search {
 	float: left;
 	position: relative;
-	width: 284px;
+	width: 240px;
+	height: 0;
 }
 
 header .search input {
@@ -115,10 +117,12 @@ header .search .search-down {
 	position: relative;
 	width: 240px;
 	height: 200px;
+	background-color: #fff;
     box-shadow:  0 1px 4px 2px rgba(0,0,0,0.1);
     border-radius: 5px;
 	border: none;
 	display: none;
+	z-index: 3;
 }
 
 header .search input:focus~.search-down{
@@ -210,17 +214,23 @@ header .extra > .user  ul {
     top: 54px;
     background-color: #fff;
 	box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.1);
-	display: none;
+/*	display: none;*/
 	z-index: 2;
 }
 
 header .extra .user:hover  ul {
 	display: block;
 }
+
+header .extra  .user > ul a {
+	color: #fff;
+}
+
 header .extra  .user ul span{
 	color: #e86f5e;
 	padding: 0 10px 0 10px;
 }
+
 
 header .extra  .user ul .tab:hover{
 	background-color: #eee;
@@ -604,7 +614,7 @@ main .content .readmore {
 }
 /*  up   */
 .icon-up {
-	position: sticky;
+	position: fixed;
 	float: right;
 	bottom: 100px;
 	right: 100px;
